@@ -4,4 +4,4 @@
 
 **Teaching assistant:** Blair Subbaraman
 
-This is an example of a student page for HCDE439. Feel free to use this as a template, or create your own!
+This is my page corresponding with my HCDE 439 class.

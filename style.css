@@ -22,7 +22,9 @@ a {
 }
 
 .body {
-  padding: 30px 30px 30px;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
 .header h1 {

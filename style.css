@@ -3,7 +3,14 @@ html, body {
   padding: 30px 30px 30px 30px;
   margin: 0;
   font-family: 'helvetica', 'arial', 'sans';
+}
+
+html {
   background: #659DBD
+}
+
+body {
+  background: #BC986A
 }
 
 h1,h2,h3,h4 {
@@ -24,11 +31,11 @@ a {
 .body {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  padding: 15px 15px 15px 15px;
 }
 
 .code {
-  padding: 50px;
+  padding: 25px;
 }
 
 .header h1 {

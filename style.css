@@ -6,11 +6,11 @@ html, body {
 }
 
 html {
-  background: #659DBD
+  background: #D8C3A5
 }
 
 body {
-  background: #BC986A;
+  background: #EAE7DC;
   position: absolute;
   left: 50%;
   transform: translate(-50%);

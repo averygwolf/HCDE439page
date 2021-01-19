@@ -44,6 +44,81 @@
             </p>
         </div>
         
+
+<div class="code">
+    <pre>
+//program that spells out HELLO in morse code, using four different LED's that each represent a different letter.
+
+void setup() {
+  //setting up the four LED's used
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+}
+
+void loop() {
+  //LED 8 lights up for four short periods, letter 'H'
+  for (int i = 0; i < 4; i++) {
+    //turns on LED 8
+    digitalWrite(8, HIGH);
+    //keeps it on for a delay of 500
+    delay(500);
+    //turns LED 8 off
+    digitalWrite(8, LOW);
+    //delays for 500 before beginning next LED sequence
+    delay(500);
+  }
+
+  //LED 9 lights up for one short period, letter 'E'
+  digitalWrite(9, HIGH);
+  //keeps LED 9 on for a delay of 500
+  delay(500);
+  //turns off LED 9
+  digitalWrite(9, LOW);
+  //delays for 500 before beginning next LED sequence
+  delay(500);
+
+  //LED 10 lights up for one short, one long, and then two short periods, letter 'L', runs twice for double 'L'
+  for (int i=0; i<8; i++) {
+    //checks to see if the period should be short or long, second period in each four period sequence should be long
+    if(i==1 || i==5) {
+      //turns LED 10 on 
+      digitalWrite(10, HIGH);
+      //keeps LED 10 on for a delay of 1000
+      delay(1000);
+      //turns off LED 10 off 
+      digitalWrite(10, LOW);
+      //delays for 1000 before beginning next LED sequence
+      delay(1000);
+    //if int i is not 1 or 5, it should be a short sequence
+    } else {
+      //turns LED 10 on
+      digitalWrite(10, HIGH);
+      //keeps LED 10 on for a delay of 500
+      delay(500);
+      //turns LED 10 off
+      digitalWrite(10, LOW);
+      //delays for 500 before beginning next LED sequence
+      delay(500);
+    }
+  }
+
+  //LED 11 lights up for three long periods, letter 'O'
+  for (int i=0; i<3; i++) { 
+    //turns on LED 11
+    digitalWrite(11, HIGH);
+    //keeps LED 11 on for a delay of 1000
+    delay(1000);
+    //turns LED 11 off
+    digitalWrite(11, LOW);
+    //delays for 100 before beginning next LED sequence
+    delay(1000);
+  }
+}
+    
+    </pre>
+</div>
             
         
     </body>

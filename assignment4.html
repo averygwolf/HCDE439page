@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Avery Wolf's HCDE 439 Page!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>Assignment 4!</h1>
+            <p>
+            <img src="input.png" class="center" width=400></a>
+            </p>
+            <p>
+            For this assignment I utilized digitalWrite, analogWrite, and analogRead to create a circuit that turns on a fading LED
+            depending on how much light a photoresistor is receiving. 
+            </p>
+        </div>
+<div>
+            <h3>Approach</h3> 
+            <p> 
+            For this assignment, I created a circuit that responds to how much light a photoresistor is receiving. If the photoresistor
+            is in full brightness, a red LED will turn on and fade. If the photoresistor is receiving some light, a green LED will turn on
+            and fade, and if the photoresistor is in very little light the yellow LED will turn on and fade.
+            </p>
+        </div>
+       
+        <div class="body">
+            <img src="inputschematic.png" width=100% style="padding-top: 50px"></a>
+            <p>
+            Here is the schematic for my input output setup. I used three LEDs and a photoresistor. To figure out what resistor to use for the LED
+            I used Ohm's law to calculate the resistance needed. For all three LEDs I calculated that the resistance needed was 
+            160 ohms. I replaced the 160 ohm resistor with a 220 ohm resistor, due to what I had available. For the photoresistor, I chose a 1K
+            resistor because I wanted to maximize the range of possible voltages while making sure that I didn't let too much current through. To identify 
+            resistor would be best, I took the highest value (650) and lowest value (0) my photoresistor was reading and calculated different voltage outputs using the
+            voltage divider formula. The 1k resistor ended up being a good range of voltage output that was easily visible when the brightness changed!
+            </p>
+        </div>
+        <div class="body">
+            <img src="input.png" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is a photo of what my circuit setup looks like.
+            </p>
+        </div>
+
+        <div class="body">
+            <img src="input1.GIF" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is my input output circuit in action!
+            </p>
+        </div>
+
+<div class="code">
+    <h3>
+    Here is the code I used to execute my circuit.
+    </h3>
+<iframe src=https://create.arduino.cc/editor/averywolf/20ace342-cdfd-4443-b60c-484c6a8bda36/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>        
+    </body>
+</html>

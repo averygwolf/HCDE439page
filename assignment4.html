@@ -14,44 +14,39 @@
         <div class="header">
             <h1>Assignment 4!</h1>
             <p>
-            <img src="input.png" class="center" width=400></a>
+            <img src="a4.1.png" class="center" width=400></a>
             </p>
             <p>
-            For this assignment I utilized digitalWrite, analogWrite, and analogRead to create a circuit that turns on a fading LED
-            depending on how much light a photoresistor is receiving. 
+            For this assignment I utilized the LCD library to display the number of times a button has been pressed. 
             </p>
         </div>
 <div>
             <h3>Approach</h3> 
             <p> 
-            For this assignment, I created a circuit that responds to how much light a photoresistor is receiving. If the photoresistor
-            is in full brightness, a red LED will turn on and fade. If the photoresistor is receiving some light, a green LED will turn on
-            and fade, and if the photoresistor is in very little light the yellow LED will turn on and fade.
+            For this assignment, I created a circuit that includes a button and an LCD display. Everytime the button is pressed, the button counter
+            increases. The LCD displays the button counter and increases everytime the button is pressed again.
             </p>
         </div>
        
         <div class="body">
             <img src="inputschematic.png" width=100% style="padding-top: 50px"></a>
             <p>
-            Here is the schematic for my input output setup. I used three LEDs and a photoresistor. To figure out what resistor to use for the LED
-            I used Ohm's law to calculate the resistance needed. For all three LEDs I calculated that the resistance needed was 
-            160 ohms. I replaced the 160 ohm resistor with a 220 ohm resistor, due to what I had available. For the photoresistor, I chose a 1K
-            resistor because I wanted to maximize the range of possible voltages while making sure that I didn't let too much current through. To identify 
-            resistor would be best, I took the highest value (650) and lowest value (0) my photoresistor was reading and calculated different voltage outputs using the
-            voltage divider formula. The 1k resistor ended up being a good range of voltage output that was easily visible when the brightness changed!
+            Here is the schematic for my libraries setup. I used a 10k potentiometer for the LCD display and a 10k ohm resistor
+            for the button. I also included a 220ohm resistor for the LCD display, but it is unecessary and was included when I thought
+            I'd utilize an LED. 
             </p>
         </div>
         <div class="body">
-            <img src="input.png" width=100% style="padding-top: 50px"></a>
+            <img src="a4.png" width=100% style="padding-top: 50px"></a>
             <p>
                 Here is a photo of what my circuit setup looks like.
             </p>
         </div>
 
         <div class="body">
-            <img src="input1.GIF" width=100% style="padding-top: 50px"></a>
+            <img src="assign4.GIF" width=100% style="padding-top: 50px"></a>
             <p>
-                Here is my input output circuit in action!
+                Here is my libraries circuit in action!
             </p>
         </div>
 

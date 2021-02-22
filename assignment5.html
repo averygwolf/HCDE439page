@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Avery Wolf's HCDE 439 Page!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>Assignment 5!</h1>
+            <p>
+            <img src="a5.2.png" class="center" width=400></a>
+            </p>
+            <p>
+            For this assignment I used an IR receiver to receive signals from a remote that would allow you
+            to speed up or slow down a dc motor!
+            </p>
+        </div>
+<div>
+            <h3>Approach</h3> 
+            <p> 
+            For this assignment, I used a DC motor in addition to an IR receiver. The DC motor was wired through a transistor
+            as well as two capacitors to handle noise that interferes with the IR receiver's ability to receive signals.
+            </p>
+        </div>
+       
+        <div class="body">
+            <img src="a4schematic.png" width=100% style="padding-top: 50px"></a>
+            <p>
+            Here is the schematic for my libraries setup. I used a 10k potentiometer for the LCD display and a 10k ohm resistor
+            for the button. A 10k potentiometer is ideal for the amount of voltage I'm using and the current I want to draw. 
+            I used a 10k resistor for the button - using ohm's law, with 5V as the voltage and 0.5mA as the current, 10,000 ohms
+            is ideal for limiting the current flowing.
+                
+            I also included a 220ohm resistor for the LCD display, but it is unecessary and was included when I thought
+            I'd utilize an LED - I took all my photos and drew my schematic before realizing that it was still there for no reason. :(
+            </p>
+        </div>
+        <div class="body">
+            <img src="a5.1.png" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is a photo of what my circuit setup looks like.
+            </p>
+        </div>
+
+        <div class="body">
+            <img src="assign4.GIF" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is my libraries circuit in action!
+            </p>
+        </div>
+
+<div class="code">
+    <h3>
+    Here is the code I used to execute my circuit.
+    </h3>
+<iframe src=https://create.arduino.cc/editor/averywolf/40c52adb-c077-4db9-9fdb-f0c91b4d55c9/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Avery Wolf's HCDE 439 Page!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>Assignment 6!</h1>
+            <p>
+            <img src="a5.2.png" class="center" width=400></a>
+            </p>
+            <p>
+            For this assignment I used a photoresistor and a button to communicate with a webpage!
+            </p>
+        </div>
+<div>
+            <h3>Approach</h3> 
+            <p> 
+            For this assignment, I used a DC motor in addition to an IR receiver. The DC motor was wired through a transistor
+            as well as two capacitors to handle noise that interferes with the IR receiver's ability to receive signals.
+            </p>
+        </div>
+       
+        <div class="body">
+            <img src="a5schematic.png" width=100% style="padding-top: 50px"></a>
+            <p>
+            Here is the schematic for my circuit setup! I used two capacitors to reduce the noise from the DC motor. There is a 100nF cap
+            in parallel for the IR receiver and a 330 muF capacitor for the motor. To be transparent, the noise from the DC motor was not
+            something I had expected to encounter and I had to do some online research to see how others had solved this problem - I found
+            someone saying they solved the noise issue on Stack Exchange using a 100nf and a 100uf capacitor so I used the 100nf capacitor I had
+            and tried using the only other capacitor I had which was a 330 muF!
+            </p>
+        </div>
+        <div class="body">
+            <img src="a5.1.png" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is a photo of what my circuit setup looks like.
+            </p>
+        </div>
+
+        <div class="body">
+            <img src="capacitorview.png" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is a closer photo to show the diode that's somewhat hidden underneath the capacitor.
+            </p>
+        </div>
+
+        <div class="body">
+            <img src="a5.GIF" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is my circuit in action!
+            </p>
+        </div>
+
+<div class="code">
+    <h3>
+    Here is the code I used to execute my circuit.
+    </h3>
+<iframe src=https://create.arduino.cc/editor/averywolf/d622adad-153d-4b78-99c6-f6908594ac87/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe></html>

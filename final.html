@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Avery Wolf's HCDE 439 Page!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+
+        <div class="header">
+            <h1>Final Project</h1>
+            <p>
+            <img src="circuit.png" class="center" width=400></a>
+            </p>
+            <p>
+            For this assignment I used a an LED strip and a motion sensor to create a night light that
+            backlit my bedframe.
+            </p>
+        </div>
+<div>
+            <h3>Approach</h3> 
+            <p> 
+            For this assignment, I used a motion sensor that would fade on an LED strip if someone walked in front of the sensor. 
+            The LED strip will fade on and stay on for 1 minute before fading off again. I wanted a light that would allow me
+            to get up in the middle of the night that was discreet enough I didn't see it in the daytime, and was dim enough
+            that it wouldn't make me wide awake. 
+            </p>
+        </div>
+       
+        <div class="body">
+            <img src="a6schematic.png" width=100% style="padding-top: 50px"></a>
+            <p>
+            Here is the schematic for my circuit setup! I used on N-MOSFET transistor along with a 220 ohm resistor for the LED strip. 
+            I used a 220 ohm resistor to limit the current being sent to the arduino, as I found was recommended on most online forums talking
+            about using transistors and 12V LED strips. The wiring was fairly straightforward to set up the sensor and the LED, but I struggled
+            a little bit initially because they both need separate power sources. The LED strip is powered via a 12V wall adaptor and the 
+            sensor is powered via a 5V wall adaptor.
+            </p>
+        </div>
+        <div class="body">
+            <img src="circuit.png" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is a photo of what my circuit setup looks like.
+            </p>
+        </div>
+
+        <div class="body">
+            <img src="setup.png" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is what the whole setup looks like as well as the housing (cardboard box) it was put in. I taped the box to the backside of my 
+                bedframe so that the sensor could still sense motion as someone walks by, but that the housing wasn't seen during the day or getting
+                in the way anywhere. .
+            </p>
+        </div>
+
+        <div class="body">
+            <img src="color.GIF" width=100% style="padding-top: 50px"></a>
+            <p>
+                Here is the night light response in action!
+            </p>
+        </div>
+        
+
+<div class="code">
+    <h3>
+    Here is the arduino code I used to execute my circuit. 
+    </h3>
+<iframe src=https://create.arduino.cc/editor/averywolf/877d2440-8786-434b-ad1f-298e965a27d6/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>

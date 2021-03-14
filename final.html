@@ -34,11 +34,13 @@
         <div class="body">
             <img src="finalschematic.png" width=100% style="padding-top: 50px"></a>
             <p>
-            Here is the schematic for my circuit setup! I used on N-MOSFET transistor along with a 220 ohm resistor for the LED strip. 
-            I used a 220 ohm resistor to limit the current being sent to the arduino, as I found was recommended on most online forums talking
-            about using transistors and 12V LED strips. The wiring was fairly straightforward to set up the sensor and the LED, but I struggled
-            a little bit initially because they both need separate power sources. The LED strip is powered via a 12V wall adaptor and the 
-            sensor is powered via a 5V wall adaptor.
+            Here is the schematic for my circuit setup! I used an N-MOSFET transistor along with a 2.2k ohm resistor for the LED strip. 
+            I used a 2.2k ohm resistor to limit the current being sent to the transistor, as I found was recommended on most online forums talking
+            about using transistors and 12V LED strips. The thought was that the resistor would reduce the current going to the transistor, and only
+            allow around 2 volts of current to flow to the transistor which is ideal for the transistor according to its data sheet. However,
+            I don't think you necessarily 'need' the resistor there, but the system worked really well with the resistor so I decided to leave it.
+            The wiring was fairly straightforward to set up the sensor and the LED, but I struggled a little bit initially because they both need 
+            separate power sources. The LED strip is powered via a 12V wall adaptor and the sensor is powered via a 5V wall adaptor.
             </p>
         </div>
         <div class="body">
